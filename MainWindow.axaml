@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Title="AvaloniaApplication1">
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <TextBlock Grid.Column="1" Grid.Row="0" Name="DataFromApiTBlock"
+                   HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" Name="ValidationResultTBlock"
+                   HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        
+        <Button Grid.Row="0" Grid.Column="0" Click="GetDataFromApi_OnClick"
+                HorizontalAlignment="Center" Height="40" Width="210" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                Content="Получить данные"></Button>
+        <Button Grid.Row="1" Grid.Column="0" Click="SendTestResult_OnClick"
+                HorizontalAlignment="Center" Height="40" Width="210" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                Content="Отправить результат теста"></Button>
+    </Grid>
+</Window>
