@@ -32,8 +32,8 @@ public partial class MainWindow : Window
         var pattern = @"^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$";
         var validationResult = Regex.IsMatch(DataFromApi, pattern);
         string validationMessage = validationResult 
-            ? "ИНН содержит запрещенные символы" 
-            : "ИНН не содержит запрещенные символы";
+            ? "Email содержит запрещенные символы" 
+            : "Email не содержит запрещенные символы";
 
         ValidationResultTBlock.Text = validationMessage;
 
